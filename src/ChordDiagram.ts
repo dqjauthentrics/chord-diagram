@@ -32,6 +32,7 @@ export class ChordDiagram {
             if (config && config.parentElement && config.positions && config.positions.length > 0) {
                 this.initialize(config);
                 const canvas = document.createElement('canvas');
+                canvas.setAttribute('class','chord-diagram');
                 const context = canvas.getContext('2d');
                 if (context) {
                     canvas.width = this.CANVAS_WIDTH;

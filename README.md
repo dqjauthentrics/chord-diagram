@@ -42,3 +42,13 @@ export interface ChordDiagramInterface {
     dotColor: string;                       // position dot color
 }
 ```
+##Sizing
+To control the size of diagrams, use CSS for canvas elements with 'chord-diagram' class, or via the parent.  E.g.,
+```
+#chordArea2 canvas {
+    max-height: 120px;
+}
+canvas.chord-diagram {
+    max-height: 180px;
+}
+```
