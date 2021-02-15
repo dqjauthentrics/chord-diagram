@@ -12,6 +12,8 @@ more than 5 frets may be spanned by a single chord.
 The position array is simple the list of finger positions, starting from the lowest string to the highest.
 Use a -1 for strings that are not played, and a 0 for those that are played open.
 
+![Demo page image](Chord_Diagram_Demo.png?raw=true "Title")
+
 The basic usage is shown in the demo index.html file:
 
 ```
