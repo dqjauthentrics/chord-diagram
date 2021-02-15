@@ -1,6 +1,6 @@
 {
   "name": "@authentrics/chord-diagram",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A typescript package for creating stringed instrument chord diagrams in Angular or vanilla JavaScript.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
