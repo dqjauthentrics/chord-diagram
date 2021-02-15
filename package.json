@@ -1,26 +1,31 @@
 {
-	"name": "chord-diagram",
-	"version": "0.0.1",
-	"description": "A typescript package for creating stringed instrument chord diagrams in Angular or vanilla JavaScript.",
-	"main": "dist/index.js",
-	"prepublish": "tsc",
-	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/dqjauthentrics/chord-diagram.git"
-	},
-	"keywords": [
-		"guitar",
-		"chord",
-		"diagram"
-	],
-	"types": "dist/index.d.ts",
-	"author": "David Quinn-Jacobs",
-	"license": "MIT",
-	"bugs": {
-		"url": "https://github.com/dqjauthentrics/chord-diagram/issues"
-	},
-	"homepage": "https://github.com/dqjauthentrics/chord-diagram#readme"
+  "name": "@authentrics/chord-diagram",
+  "version": "0.0.1",
+  "description": "A typescript package for creating stringed instrument chord diagrams in Angular or vanilla JavaScript.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "prepublish": "tsc",
+  "scripts": {
+    "build": "tsc -p ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dqjauthentrics/chord-diagram.git"
+  },
+  "keywords": [
+    "guitar",
+    "chord",
+    "diagram"
+  ],
+  "author": "David Quinn-Jacobs",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dqjauthentrics/chord-diagram/issues"
+  },
+  "homepage": "https://github.com/dqjauthentrics/chord-diagram#readme",
+  "devDependencies": {
+    "@types/node": "^14.14.28",
+    "typescript": "^4.1.5"
+  },
+  "dependencies": {}
 }

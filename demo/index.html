@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Chord Diagram Demo</title>
+	<meta name="description" content="Chord Diagram Demo">
+	<meta name="author" content="David Quinn-Jacobs">
+</head>
+<body>
+<h1>Chord Diagram Demo</h1>
+<div id="chordArea"></div>
+</body>
+<script>const exports = {"__esModule": true};</script>
+<script src="../dist/ChordDiagram.js"></script>
+<script>
+	const parentEl = document.getElementById('chordArea');
+	const chords = [
+		{parentElement:parentEl, name: 'C', positions: [1,2,3,0,0,1]},
+		{parentElement:parentEl, name: 'D', positions: [0,1,3,0,0,1], color: 'navy', dotColor: '#AAA'},
+		{parentElement:parentEl, name: 'D', positions: [0,1,3,0,0,1], dotColor: 'orange'},
+	];
+	const diagrammer = new ChordDiagram();
+	for (const chord of chords) {
+		diagrammer.draw(chord);
+	}
+</script>
+</html>
