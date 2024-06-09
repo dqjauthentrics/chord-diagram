@@ -39,7 +39,10 @@ export class ChordDiagram {
                     canvas.height = this.CANVAS_HEIGHT;
                     this.drawNeck(config, context);
                     this.drawPositions(config, context);
-                    config.parentElement.appendChild(canvas);
+                    //config.parentElement.appendChild(canvas);
+                    const img = document.createElement('img');
+                    img.src = canvas.toDataURL();
+                    config.parentElement.appendChild(img);
                 }
             }
         } catch (exception) {
