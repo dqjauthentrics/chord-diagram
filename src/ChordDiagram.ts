@@ -41,6 +41,8 @@ export class ChordDiagram {
                     this.drawPositions(config, context);
                     //config.parentElement.appendChild(canvas);
                     const img = document.createElement('img');
+                    img.setAttribute('width', '280');
+                    img.setAttribute('height', '280');
                     img.src = canvas.toDataURL();
                     config.parentElement.appendChild(img);
                 }
